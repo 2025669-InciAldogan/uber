@@ -19,4 +19,7 @@ def load_data(nrows):
 data_load_state=st.text("Data Loading...")
 data=load_data(1000)
 data_load_state.text("Done!")
-2
+
+if st.checkbox("Show Raw Data"):
+   st.subheader("Raw Data")
+   st.write(data)
